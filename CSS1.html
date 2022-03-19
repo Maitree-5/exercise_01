@@ -1,0 +1,196 @@
+<html>
+
+    <head>
+
+        <!-- 1) external styling works-->
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- 2) embedded styling-->
+
+        <style>
+
+            /* this is how you write comments */
+
+            h1{
+
+                /*color:red;*/
+
+              /* color: rgb(255,0,0)/* red,green,blue .255 is the full color  *//*rgb(255,255,255) =white rgb(0,0,0) black*/
+
+              /*  color: rgba(0,0,255,1) last value is for transparency */
+
+              color : #f29bda;/*#000000=black #ffffff=white*/
+
+
+
+            }
+
+
+
+            h4{
+
+                background-color: aqua;
+
+            }
+
+            p{
+
+                /*font-size: 100%;/* % is relative type font size. 100% default font size   */ 
+
+               /* font-size: 32px;   /*absolute*/
+
+               font-size:1.5em; /* em is relative , 1em = browser's default setting (usually 16px)=100% */
+
+               font-size: 22pt;/*(absolute ) 1pt=1.3333px*/
+
+               font-family: Arial, "Times new roman",serif;
+
+               font-style:italic;/* italic and normal*/
+
+               font-variant:small-caps;
+
+               font-weight:700;
+
+
+
+            }
+
+            span{
+
+                font-weight: lighter;/*bold,normal lighter*/
+
+                background-color: lightgreen;
+
+                line-height: 500%;
+
+            }
+
+            #i1 {
+
+                background-color: yellow;
+
+            }
+
+            #i2{
+
+                background-color: aqua;
+
+            }
+
+            .drink{
+
+                background-color: blue;
+
+            }
+
+            h5,h6,div{
+
+             background-color:lime;
+
+            }
+
+            #i4{
+
+                /* short hand property :style,weight,variant,size/lineheight,family*/
+
+                font: italic bold 14px/200% Arial, sans-serif;
+
+            }
+
+            #i5{
+
+                /*text-indent: 10em;*/
+
+               /* text-align:center;*/
+
+                text-decoration: underline ;
+
+                /* underline, overline line-through*/
+
+                text-decoration-style:wavy;/* wavy,dotted,dashed, doubled */
+
+                
+
+            }
+
+            img{
+
+                vertical-align: sub; /*text-top,text-bottom,baseline, sub, super */
+
+            }
+
+        </style>
+
+
+
+        
+
+    </head>
+
+    <body>
+
+        <h1 id="i1"> Css Demo</h1>
+
+        <h1 id="i2"> Hello </h1>
+
+        <h2 style="color:blue;"> Hello</h2><!-- 3) inline styling-->
+
+        <h3> Good Afternoon</h3>
+
+
+
+        <h4> This is h4</h4>
+
+        <p> This is paragraph</p>
+
+        <span> This is para2</span>
+
+        <ul class="drink" id="i3" >
+
+            <li> Tea</li>
+
+            <li> Coffee</li>
+
+            <li> Chocolate drink</li>
+
+        </ul>
+
+        <ul>
+
+            <li> Swimming</li>
+
+            <li> Dancing</li>
+
+            <li> Reading</li>
+
+        </ul>
+
+        <h5>h5</h5>
+
+        <h6>h6</h6>
+
+        <div>h7</div>
+
+       <div> This is div<span> This is span </span>
+
+       </div>
+
+
+
+       <p id="i4"> This is para 2 for shoing short hand properety of the css fonts</p>
+       <section id="i5"><img src="c1.png" width="50" height="50"> Welcome to my class, Thank you for attending it in the evening </section>
+
+
+
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </body>
+
+</html>

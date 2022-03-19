@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--DOM TREE - Document Object Model-->
+<html>
+    <head>
+<style>
+main li { /*li - descendent of main
+    REASON: main: ancestor and li: decsendent - as we just wanna highlight of li which is in the main tag. 
+    NOTE: li is descendent, this includes immidiate parent & child + ancestor and descendent relation.  */
+    background-color:yellow;
+}
+
+main>p {/* Parent child: p which is immidiate child of main, 
+    NOTE: greater than sign is always towards the parent and less than is always towards the child. */
+    background-color:aqua;
+}
+
+h2+p{/*Adjacent sibling: p is next to h2. */
+color:#ab356a;
+font-weight:bold;
+}
+
+h2~p{ /*General siblings: p which is sibling of h2 */
+    text-decoration:underline;
+}
+
+ul.months{/* class months which has ul element. */
+color:cadetblue;
+}
+
+/*FOR MULTIPLE EDITING:*/
+
+h2,ul.months,a{
+    font-size:20px
+}
+
+
+</style>
+    </head>
+    <body>
+<main>
+
+    <h1>Welcome to CSS week 8</h1>
+    <ul class="months">
+
+        <li>January: <a href="https://www.yahoo.com">January</a></li>
+        <li>February: <a href="https://www.google.ca">February</a></li>
+        <li>March: <a href="https://www.humber.ca">March</a></li>
+</ul>
+    
+    <h2> h2: Post-lecture luncheons</h2>
+
+    <p class="months">Extend the excitement by going to the luncheon.</p>
+<p>A limited number of tickets are available.</p>
+<p><em>Contact us by phone</em> at (559) 555-1212</p>
+
+</main>
+
+    </body>
+</html> 

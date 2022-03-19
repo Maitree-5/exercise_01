@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head> <h1>Order Form</h1>
+        <body>
+        <form name="Order" method="get" action="a.html">
+
+            <label for="first">First Name:</label> 
+            <input type="text" id="first" name="fn" maxlength="8" autofocus placeholder="Enter your first name"><br><br>
+        <label for="last">Last Name:</label>
+         <input type="text" id="last" name="ln" maxlength="8" ><br><br>
+        <label for="pro">Province</label> <input type="text" id="pro" name="pr" value="ON"><br><br>
+            Password: <input type="password" name="ln"><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="url">Type Website</label>
+            <input type="url" name="url" id="url"><br><br>
+
+            <label for="age">Your Age:</label>
+            <input type="number" name="age" id="age" step="2" min="18" max="90"><br><br>
+
+            <label for="tele">Phone Number</label>
+            <input type="tel" name="tele" id="tele"><br><br>
+
+            <label for="exp">Your Experience</label>
+            <input type="range" name="exp" id="exp"><br><br>
+
+
+            TYPE OF PROGRAM:<br>
+            <input type="radio" name="progType" value="PT"> Part-time<br>
+            <input type="radio" name="progType" value="FT">Full-time<br><br>
+            <fieldset>
+            <legend>HOBBIES:</legend><br>
+            <input type="checkbox" name="chk1" value="swim">Swimming<br>
+            <input type="checkbox" name="chk2" value="play">Playing<br>
+            <input type="checkbox" name="chk3" value="dance">Dancing<br>
+            <input type="checkbox" name="chk4" value="travel">Travelling<br><br>
+        </fieldset>
+            LIST OF CITIES: select your city<br>
+            <select label="cities">
+                <optgroup name="INDIA">
+                <option value="Bnglr">Banglore</option>
+                <option value="Mmb">Mumbai</option>
+                <option value="Abad">Ahmedabad</option>
+                </optgroup>
+                <optgroup label="CANADA">
+                <option valu="Trnt">Toronto</option>
+                <option value="Ottw">Ottawa</option>
+             </optgroup>
+             </select>
+             <br><br><br>
+
+            <input type="submit" name="btnSubmit" value="submit">
+            <input type="reset" name="btnreset" value="reset fields">
+            <button><img src="cart1.PNG" width ="20" hight="10">ADD TO CART</button>
+             <input type="button" name="alert" value="Alert me">
+        </form>
+        </body>
+    </head>
+</html>

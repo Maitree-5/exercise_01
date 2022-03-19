@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Order Form</h1>
+    </head>
+    <body>
+
+        <form name="order" method="get" action="a.html">
+<fieldset>
+    <legend>Member Information</legend>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email"><br>
+
+    <label for="first">First Name:</label> 
+    <input type="text" id="first" name="fn" maxlength="8"><br>
+
+    <label for="last">Last Name:</label>
+    <input type="text" id="last" name="ln" maxlength="8" ><br>
+</fieldset><br>
+<fieldset>
+    <legend>Credit Card Information</legend>
+    <label for="card">Card Type:</label>
+    
+    <select label="cardtype">
+    <optgroup name="visa">
+        <option value="vs">Visa</option>
+        <option value="mscrd">Mastercard</option>
+        <option value="amexprss">American Express</option>
+        <option value="dscvr">Discover</option><br>
+    </optgroup>
+    </select><br>
+
+    <label for="card">Card Number:</label>
+    <input type="text" name="card" id="card" maxlength="16" autospace placeholder="16 digits"><br>
+
+   
+
+    <label for="expiry">Expiration date: </label>
+   <select name="month">
+       <optgroup name="January">
+           <option value="jan">January</option>
+           <option value="feb">February</option>
+           <option value="mar">March</option>
+           <option value="apl">April</option>
+           <option value="may">May</option>
+           <option value="jn">June</option>
+           <option value="jl">July</option>
+           <option value="aug">August</option>
+           <option value="sept">September</option>
+           <option value="oct">October</option>
+           <option value="nov">November</option>
+           <option value="dec">December</option>
+       </optgroup>
+    </select>
+    <select>
+        <optgroup name="year">
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+        </optgroup>
+    </select>
+</fieldset><br>
+
+<fieldset>
+    <legend>Submit Your Order</legend>
+    <input type="submit" name="btnSubmit" value="submit">
+            <input type="reset" name="btnreset" value="reset fields">
+</fieldset><br><br><br><br>
+
+<table border="1" bordercolor="blue">
+    <tr>
+        <td style="color:blue" colspan="3"><h2>Please complete our survey</h2><br>
+            <h3 style="color:black">Contact information</h3><br>
+            <label for="mail"><b>E-mail:</b></label>
+            <input type="email" name="email" id="mail"><br>
+            <b><label for="fname">First Name:</label> 
+                <input type="text" id="fname" name="first" maxlength="8"></b><br>
+                <b><label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last" maxlength="8" ></b><br>
+                    <h3 style="color:black">Geographic information</h3><br>
+                    <b><label for="state">State:</label>
+                        <input type="text" id="state" name="state" autospace placeholder="two characters"></b><br>
+
+                        <b><label for="code">Zip code:</label>
+                            <input type="code" id="code" name="code" maxlength="5" autospace placeholder="five digits"></b><br>
+                            <h3 style="color:black">HOW did you hear about us?</h3><br>
+                            <b>
+                                <input type="checkbox" name="chk1" value="Wbsrch">Web Search:<br>
+                                <input type="checkbox" name="chk2" value="FB">Facebook:<br>
+                                <input type="checkbox" name="chk3" value="Twtr">Twitter:<br>
+                                <input type="checkbox" name="chk4" value="Email">Email message:<br>
+                           </b><br>
+              <input type="submit" style="text-align:center" name="btnSubmit" value="Submit">
+            <input type="reset" style="text-align:center" name="btnreset" value="Reset">
+        </td>
+    </tr>
+</table>
+        </form>
+    </body>
+</html>
